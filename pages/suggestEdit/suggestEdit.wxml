@@ -1,0 +1,8 @@
+<!--pages/suggestEdit/suggestEdit.wxml-->
+
+<view>意见编辑</view>
+<textarea bindinput="txtarea"></textarea>
+<view class="btn">
+<button bindtap="submit">提交</button>
+</view>
+

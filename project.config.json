@@ -1,0 +1,143 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.1",
+	"appid": "wx0428e812ed70bc04",
+	"projectname": "Demo-Convenient%20Bookkeeping",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": -1,
+					"name": "记账",
+					"pathName": "pages/Booking/Booking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "账单",
+					"pathName": "pages/Bill/Bill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "明细",
+					"pathName": "pages/Detailed/Detailed",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日历打卡",
+					"pathName": "pages/year/year",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "日历",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "My",
+					"pathName": "pages/My/My",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人资料",
+					"pathName": "pages/perData/perData",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人资料",
+					"pathName": "pages/perData/perData",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/suggest/suggest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "意见编辑",
+					"pathName": "pages/suggestEdit/suggestEdit",
+					"scene": null
+				}
+			]
+		}
+	}
+}

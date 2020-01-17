@@ -1,0 +1,77 @@
+/* pages/mine/me.wxss */
+
+.all {
+  min-height: 100vh;
+  background-color: #ccc;
+}
+
+.all .top {
+  height: 30vh;
+  background-color: #ffd700;
+  /* background-image: url("http://ku.90sjimg.com/element_origin_min_pic/17/08/31/85737c387e15ae2f9878a4604eadd410.jpg");
+  background-size: contain; */
+  position: relative;
+  margin-bottom: 30rpx;
+}
+
+.all .top button {
+  width: 300rpx;
+  position: absolute;
+  top: 100rpx;
+  left: 220rpx;
+}
+
+.all .top image {
+  margin: 20rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 5px #fff;
+  position: absolute;
+  top: 5%;
+  left: 35vw;
+}
+
+.all .top .userinfo-nickname {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  left: 40vw;
+  bottom: 30rpx;
+}
+
+.all .bottom navigator {
+  height: 100rpx;
+  background-color: #fff;
+  color: gray;
+  line-height: 100rpx;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+}
+
+.all .bottom navigator text,.all .bottom .setting text {
+  font-size: 35px;
+  padding-right: 30rpx;
+  color: #ccc;
+}
+
+.bottom navigator:nth-child(1), .bottom navigator:nth-child(4) {
+  border-bottom: none;
+  margin-bottom: 30rpx;
+}
+
+.bottom .setting {
+  height: 100rpx;
+  background-color: #fff;
+  color: gray;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+  border-bottom: none;
+  margin-bottom: 30rpx;
+}

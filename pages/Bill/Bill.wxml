@@ -1,0 +1,90 @@
+<!--pages/Bill/Bill.wxml-->
+<view>
+  <view class="top">
+    <view class="selectTime">
+      <picker class="picker" mode="date" value="{{data}}" star="1970-01-01" end="{{end}}" fields="month" bindchange="bindDateChange" bindtap="bindChangeMoneny">
+        <view class="time">
+          <text class="pickYear">{{year}}年</text>
+          <text class="pickMonth">{{month}}月</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="showData">
+    <view class="SDcon">
+      <view class="SDtop">
+        <view class="topShow">{{zhengfuResult}}</view>
+        <view class="topTips">您本月的结余正负值</view>
+      </view>
+      <view class="conShow">
+        <view class="zhichu">
+          <view class="money">{{expendResultMonth}}</view>
+          <view class="title">本月支出</view>
+          <button bindtap="showZhi">{{Zhitext}}</button>
+          <view class="left" width="50%"></view>
+          <view id="left" style="display:{{left}};"></view>
+        </view>
+        <view class="shouru">
+          <view class="money">{{incomeResultMonth}}</view>
+          <view class="title">本月收入</view>
+          <button bindtap="showShou">{{Shoutext}}</button>
+          <view class="right" width="50%"></view>
+          <view id="right" style="display:{{right}};"></view>
+        </view>
+      </view>
+
+
+      <view class="left" style="width:{{lWid}}; display: {{left}};">
+        <scroll-view scroll-y="true" style="height: 610rpx;">
+          <!-- bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" -->
+
+          <view class="details" wx:for="{{list}}" wx:key="index" wx:if="{{ item.attributes.zhichuMoney < 0}}" style="display:'none'">
+            <view class="detailsLeft">
+              <text class="detailsTime">{{item.attributes.booking_time}}</text>
+              <view class="titleBg">{{item.attributes.saveMoney_details.expendDetail}}</view>
+            </view>
+            <view class="beizhu" style="display:{{lWid == '50vw'?'none':''}}">{{item.attributes.saveMoney_details.beizhuinputVal}}</view>
+            <text class='detailsMoney'>{{item.attributes.zhichuMoney}}</text>
+          </view>
+          <view class="btm">~已经到底了~</view>
+        </scroll-view>
+      </view>
+
+
+      <view class="right" style="width:{{rWid}};display:{{right}}">
+        <scroll-view scroll-y="true" style="height: 610rpx;">
+          <!-- bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" -->
+          <view class="details" wx:for="{{list}}" wx:key="index" wx:if="{{ item.attributes.zhichuMoney > 0}}" style="display:'none'">
+            <view class="detailsLeft">
+              <text class="detailsTime">{{item.attributes.booking_time}}</text>
+              <view class="titleBg">{{item.attributes.saveMoney_details.expendDetail}}</view>
+            </view>
+            <view class="beizhu" style="display:{{rWid == '50vw'?'none':''}}">{{item.attributes.saveMoney_details.beizhuinputVal}}</view>
+            <text class='detailsMoney'>{{item.attributes.zhichuMoney}}</text>
+          </view>
+          <view class="btm">~已经到底了~</view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 最高支出与最高收入 -->
+
+  <!-- 显示本月支出与收入的最大值 -->
+  <view class="showMaxDetial">
+    <view>
+      <view class="expendMax">
+        <text>本月最高支出</text>
+        <text class="money">{{expendMax}}</text>
+        <text bindtap="handleExpendMax">></text>
+      </view>
+      <view class="expendMax">
+        <text>本月最高收入</text>
+        <text class="money">{{incomeMax}}</text>
+        <text bindtap="handleIncomeMax">></text>
+      </view>
+    </view>
+  </view>
+</view>

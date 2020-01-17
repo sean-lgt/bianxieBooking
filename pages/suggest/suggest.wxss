@@ -1,0 +1,52 @@
+/* pages/suggest/suggest.wxss */
+.topTips{
+  width: 100vw;
+  height: 110rpx;
+  background-color: #ffd700;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  /* margin-bottom: 20rpx; */
+  overflow: hidden;
+}
+.topTips button{
+ margin: 0;
+  padding: 0;
+  height: 70rpx;
+  width: 140rpx;
+  background-color: white;
+  font-size: 14px;
+  line-height: 70rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 55rpx;
+  margin-top: -35rpx;
+}
+.contain{
+  width: vw;
+  min-height: vh;
+  margin: 120rpx 30rpx 30rpx 30rpx;
+
+}
+.contain .top{
+  text-align:  center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20rpx 0;
+}
+.contain .item{
+  width: vw;
+  margin: 30rpx 0;
+  padding: 20rpx;
+  background-color: #ccc;
+}
+.contain .item .name{
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20rpx;
+}
+.contain .item .sug{
+  text-indent: 3em;
+  margin: 20rpx 0;
+}

@@ -1,0 +1,12 @@
+<!--pages/suggest/suggest.wxml-->
+<view class="topTips">
+    <button bindtap="handleEdit">编辑意见</button>
+</view>
+
+<view class="contain">
+<view class="top">意见反馈</view>
+  <view class="item" wx:for="{{list}}" wx:key="index">
+    <view class="name">{{item.attributes.username}}</view>
+    <view class="sug">{{item.attributes.suggestContent}}</view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-10-30 13:05:53
+ * @LastEditTime: 2019-10-31 16:34:43
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \Convenient Bookkeeping\pages\Detailed\Detailed.wxml
+ -->
+<!-- pages/Detailed/Detailed.wxml -->
+<view>
+  <view class="top">
+    <view class="topTips">
+      <!-- <view class="title">
+        记账明细
+      </view> -->
+      <view class="title">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      类型:<text>《{{array[index]}}》</text>
+      </picker>
+      </view>
+      <button wx:if="{{editText == '完成'}}" bindtap="btnDelete">删除</button>
+      <radio-group wx:if="{{editText == '完成'}}">
+        <radio checked="{{allChecked}}" bindtap="handleAllCheck">全选</radio>
+      </radio-group>
+      <button bindtap="handleEdit">{{editText}}</button>
+    </view>
+  </view>
+
+  <!-- 显示记账详细部分 -->
+  <view class="main">
+    <view class="details" wx:for="{{bookingDetailsList}}" wx:key="index" wx:if="{{item.attributes.saveMoney_details.expendDetail == select || select == '全部'}}">
+      <radio-group wx:if="{{editText == '完成'}}">
+        <radio bindtap="delDetail" data-index="{{index}}" data-id="{{item.id}}" checked="{{item.radio}}"></radio>
+      </radio-group>
+      <view class="detailsLeft">
+        <text class="detailsTime">{{item.attributes.booking_time}}</text>
+        <view class="titleBg">{{item.attributes.saveMoney_details.expendDetail}}</view>
+      </view>
+      <view class="beizhu">{{item.attributes.saveMoney_details.beizhuinputVal}}</view>
+      <text class='detailsMoney{{ item.attributes.zhichuMoney > 0?"1":"2"}}'>{{item.attributes.zhichuMoney}}</text>
+    </view>
+  </view>
+</view>

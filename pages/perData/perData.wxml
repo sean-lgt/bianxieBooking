@@ -1,0 +1,35 @@
+<!--pages/perData/perData.wxml-->
+<view class="all">
+  <view class="top">
+    <image class="image" src="{{picPath}}"></image>
+    <view class="name">{{name}}
+      <image src="/icons/bj.png" class="img"></image>
+    </view>
+  </view>
+
+  <view class="main">
+    <view class="birthday">
+      <text>出生日期：</text>
+      <picker class="picker" mode="date" start="1970-01-01" end="{{end}}" fields="day" bindchange="repair1">
+        <text>{{birthday}}</text>
+        <!-- bindinput="huoQu" -->
+      </picker>
+            <text class="determine" bindtap="bri_determine">确定</text>
+    </view>
+    <view class="plan">
+      <text>未来计划：</text>
+      <input type="text" value="{{inputValue1}}" bindinput="inputValue1" placeholder="请输入未来计划"></input>
+      <text bindtap="repair2" class="look">{{lookAndmodify}}</text>
+    </view>
+    <view class="phone">
+      <text>联系电话：</text>
+      <input type="number" value="{{inputValue2}}" maxlength="11" type="Number" bindinput="inputValue2" placeholder="请输入联系电话"></input>
+      <text bindtap="repair3" class="xiugai">{{textphnoe}}</text>
+    </view>
+    <view class="gexingqiangming">
+      <text>个性签名：</text>
+      <input type="text" value="{{inputValue3}}"  placeholder="请输入个性签名" bindinput="inputValue3"></input>
+      <text bindtap="repair4" class="xiugai">{{textQM}}</text>
+    </view>
+  </view>
+</view>

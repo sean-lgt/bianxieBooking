@@ -1,0 +1,22 @@
+<view class="top">
+  <view class="daka"><view class="yidaka"></view>已打卡</view>
+  <view class="info">
+    <view class="dakas">打卡获得5积分</view>
+    <view class="buqians">补签消耗3积分</view>
+  </view>
+  <view class="int">积分：{{int}}</view>
+</view>
+<!-- 日历部分 -->
+<view class="todo-calendar">
+  <calendar  calendar-style="calendar" year="{{year}}"  month="{{month}}" header-style="calendar-header"  board-style="calendar-board" days-color="{{dayStyle}}" weeks-type="cn" binddayClick="{{flag}}"  bindnextMonth="next" bindprevMonth="prev"/>
+</view>
+
+<!-- 坚持打卡天数 -->
+<view class='count'>
+  <text>截至目前，你本月已打卡</text>
+  <view class='daynumber'>
+    <text class='number'>{{signday}}</text>
+    <text class='day'>天</text>
+  </view>
+  <text>请再接再厉，继续努力</text>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/reward/reward.wxml-->
+<view class=".contain">
+  <view class="txt">添加开发者微信为好友了解小程序</view>
+  <view class="txt">给予开发者鼓励</view>
+  <view class="txt">wx:CX852951042</view>
+  <view class="img">
+    <image src="/icons/微信图片1.jpg"></image>
+  </view>
+  <view class="img">
+    <image src="/icons/微信图片2.jpg"></image>
+  </view>
+</view>

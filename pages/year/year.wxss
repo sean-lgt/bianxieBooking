@@ -1,0 +1,116 @@
+.top {
+ width: 100vw;
+  height: 110rpx;
+  background-color: #ffd700;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .daka{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .yidaka{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+}
+.top .weidaka{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background-color: gray;
+  margin-left: 10rpx;
+}
+.top .int{
+  margin-right: 30rpx;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+/* 日历部分 */
+.todo-calendar{
+  margin-top: 140rpx;
+}
+.calendar {
+  background-color:white; /*背景色为白色*/
+  padding-top: 10px;    /*上内边距为10px*/
+  color: #ffd700;
+  border-radius: 15px;   /*添加边框圆角*/
+  border: 5rpx solid #ffd700;
+  -webkit-box-shadow:0 0 10px #ffd700;
+  -moz-box-shadow:0 0 10px #ffd700;
+  box-shadow:0 0 10px #ffd700;
+}
+
+
+
+
+.info{
+  text-align: center;
+  height: 100rpx;
+/* line-height: 100rpx; */
+/* font-weight: bold; */
+color: gray;
+/* width: 380rpx; */
+/* font-size: 18px; */
+}
+.btm{
+  /* background-color: gray; */
+  font-size: 24px;
+  text-align: center;
+  color: blue;
+  margin-top: 100rpx; 
+}
+.btm input{
+ height: 60rpx;
+ text-align: center;
+ color: red;
+}
+
+.count .daynumber{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.count .daynumber .day{
+  margin-top: 50rpx;
+}
+
+.count{
+  margin: 20rpx;
+  padding: 30rpx;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffd700;
+  align-items: center;
+}
+
+.count .number{
+  color: red;
+  font-size: 60rpx;
+  background-color: #fff;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20rpx;
+}
+
+.count text{
+  margin: 10rpx;
+}

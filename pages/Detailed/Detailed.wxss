@@ -1,0 +1,107 @@
+/* pages/Detailed/Detailed.wxss */
+
+/* 顶部部分 */
+
+.top {
+  width: 100vw;
+  height: 110rpx;
+  background-color: #ffd700;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.top .topTips {
+  height: 80rpx;
+  width: 90%;
+  padding: 20rpx;
+  /* background-color: pink; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .topTips .title {
+  font-size: 16px;
+  color: white;
+}
+
+.top .topTips button {
+  margin: 0;
+  padding: 0;
+  height: 60rpx;
+  width: 120rpx;
+  background-color: white;
+  font-size: 14px;
+  line-height: 60rpx;
+}
+
+/* 显示详细流水部分 */
+
+.main {
+  margin-top: 130rpx;
+  padding: 0 10rpx;
+}
+
+.details {
+  width: 100%;
+  height: 107rpx;
+  /* background-color: pink; */
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  margin-top: 20rpx;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.details radio {
+  flex: 1;
+  margin: 0 30rpx;
+}
+
+.details .detailsLeft {
+  /* padding-left: 50rpx; */
+  /* flex: 1; */
+  width: 150rpx;
+  padding-bottom: 10rpx;
+}
+
+.details .detailsLeft .detailsTime {
+  color: #696969;
+  font-size: 10px;
+}
+
+.titleBg {
+  width: 120rpx;
+  height: 60rpx;
+  background-color: #ffd700;
+  border-radius: 25rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #696969;
+  font-weight: bold;
+}
+
+.details .beizhu {
+  flex: 3;
+  font-size: 16px;
+  text-align: center;
+  color: #696969;
+  /* font-weight: bold; */
+}
+
+.detailsMoney1 {
+  color:green;
+  font-size: 16px;
+  margin-right: 30rpx;
+  /* font-weight: bold; */
+}
+.detailsMoney2 {
+  color: red;
+  font-size: 16px;
+  margin-right: 30rpx;
+  /* font-weight: bold; */
+}
