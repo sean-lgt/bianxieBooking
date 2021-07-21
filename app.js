@@ -56,4 +56,4 @@ App({
 })
 var Bmob = require('/utils/bmob.js');
 // Application ID, REST API Key  在Bmob应用密钥里
-Bmob.initialize('dff440e81b74e4a5c0328c4a51e6286f', '32a8c4f096a8116ee019af1d1549350b');
+Bmob.initialize('Application ID', 'REST API Key');
