@@ -1,4 +1,19 @@
-# bianxieBooking
-便携记账本小程序
-1.微信搜索小程序  便携记账本
+# bookkeeping-uni-mini
 
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

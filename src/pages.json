@@ -1,0 +1,153 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "便携记账本"
+      }
+    },
+    {
+        "path": "pages/billStatistics/billStatistics",
+        "style": {
+          "navigationBarTitleText": "记账统计"
+        }
+    },
+    {
+        "path": "pages/billStatistics/billDetail",
+        "style": {
+          "navigationBarTitleText": "记账详情"
+        }
+    },
+    {
+        "path": "pages/booking/booking",
+        "style": {
+          "navigationBarTitleText": "记账"
+        }
+    },
+    {
+        "path": "pages/clockIn/clockIn",
+        "style": {
+          "navigationBarTitleText": "打卡记录"
+        }
+    },
+    {
+        "path": "pages/mine/mine",
+        "style": {
+          "navigationBarTitleText": "我的"
+        }
+    },
+    {
+        "path": "pages/userInfo/userInfo",
+        "style": {
+          "navigationBarTitleText": "个人资料"
+        }
+    },
+    {
+        "path": "pages/useDescription/useDescription",
+        "style": {
+          "navigationBarTitleText": "使用说明"
+        }
+    },
+    {
+        "path": "pages/feedback/feedback",
+        "style": {
+          "navigationBarTitleText": "意见反馈"
+        }
+    },
+    {
+        "path": "pages/feedback/editFeed",
+        "style": {
+          "navigationBarTitleText": "意见编辑"
+        }
+    },
+    {
+        "path": "pages/Links/Links",
+        "style": {
+          "navigationBarTitleText": "友情链接"
+        }
+    },
+    {
+        "path": "pages/Links/Links-webview",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+    },
+    {
+        "path": "pages/contact/contact",
+        "style": {
+          "navigationBarTitleText": "联系开发者"
+        }
+    }
+    
+  ],
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#696969",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [{
+            "pagePath": "pages/index/index",
+            "iconPath": "static/icon/tabar-detail.png",
+            "selectedIconPath": "static/icon/tabar-detail-active.png",
+            "text": "明细"
+        }, {
+            "pagePath": "pages/billStatistics/billStatistics",
+            "iconPath": "static/icon/tabar-statistics.png",
+            "selectedIconPath": "static/icon/tabar-statistics-active.png",
+            "text": "统计"
+        },
+        {
+            "pagePath": "pages/booking/booking",
+            "iconPath": "static/icon/tabar-booking.png",
+            "selectedIconPath": "static/icon/tabar-booking-active.png",
+            "text": "记账"
+        },
+ 
+        {
+            "pagePath": "pages/clockIn/clockIn",
+            "iconPath": "static/icon/tabar-clockin.png",
+            "selectedIconPath": "static/icon/tabar-clockin-active.png",
+            "text": "打卡"
+        }, {
+            "pagePath": "pages/mine/mine",
+            "iconPath": "static/icon/tabar-mine.png",
+            "selectedIconPath": "static/icon/tabar-mine-active.png",
+            "text": "我的"
+        }
+    ]
+},
+"easycom": {
+    "autoscan": true,
+    "custom": {
+       
+        "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+},
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "便携记账本",
+    "navigationBarBackgroundColor": "#ffd700",
+    "backgroundColor": "#ffd700",
+    "usingComponents": {
+      "van-button": "./wxcomponents/vant/dist/button/index",
+      "van-icon": "./wxcomponents/vant/dist/icon/index",
+      "van-picker": "./wxcomponents/vant/dist/picker/index",
+      "van-action-sheet": "./wxcomponents/vant/dist/action-sheet/index",
+      "van-radio": "./wxcomponents/vant/dist/radio/index",
+      "van-radio-group": "./wxcomponents/vant/dist/radio-group/index",
+      "van-checkbox": "./wxcomponents/vant/dist/checkbox/index",
+      "van-checkbox-group": "./wxcomponents/vant/dist/checkbox-group/index",
+      "van-empty": "./wxcomponents/vant/dist/empty/index",
+
+      "van-skeleton": "./wxcomponents/vant/dist/skeleton/index",
+      "van-loading": "./wxcomponents/vant/dist/loading/index",
+      "van-field": "./wxcomponents/vant/dist/field/index",
+      "van-datetime-picker": "./wxcomponents/vant/dist/datetime-picker/index",
+      "van-calendar": "./wxcomponents/vant/dist/calendar/index",
+      "van-overlay": "./wxcomponents/vant/dist/overlay/index",
+      "van-cell": "./wxcomponents/vant/dist/cell/index",
+      "van-cell-group": "./wxcomponents/vant/dist/cell-group/index"
+    }
+  }
+}
