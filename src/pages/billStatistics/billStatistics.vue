@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: lgt
  * @Date: 2021-07-13 21:11:03
- * @LastEditTime: 2021-07-21 21:11:42
+ * @LastEditTime: 2021-08-22 13:36:35
  * @LastEditors: xxx
 -->
 <template>
@@ -281,12 +281,16 @@ export default {
                     sortArr.push(item.saveMoney_details.expendDetail);
                     sortArrDetail.push({
                         name: item.saveMoney_details.expendDetail,
-                        value: Math.abs(item.saveMoney_details.shouruinputVal),
+                        value: item.saveMoney_details.shouruinputVal,
                     });
                 } else {
-                    sortArrDetail[sortArrDetail.length - 1].value += Math.abs(
-                        item.saveMoney_details.zhichuMoney
-                    );
+               
+                    let findIndex = sortArr.indexOf(item.saveMoney_details.expendDetail)
+                    sortArrDetail[findIndex].value +=  item.saveMoney_details.shouruinputVal
+
+                    // sortArrDetail[sortArrDetail.length - 1].value += 
+                    //     item.saveMoney_details.zhichuMoney
+                    // ;
                 }
             });
             if (sortArrDetail.length <= 6) {
@@ -295,7 +299,7 @@ export default {
                 //数组对象 重新排序 取出前5大 + 其他
             }
             that.isShowPieInComeData =true;
-            console.log("income-sortArr", sortArr);
+            console.log("income-sortArr1122", sortArr);
             console.log("income-sortArr", sortArrDetail);
         },
         handleDailyEchartData(){

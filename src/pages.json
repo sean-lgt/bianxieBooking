@@ -128,7 +128,7 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "便携记账本",
     "navigationBarBackgroundColor": "#ffd700",
-    "backgroundColor": "#ffd700",
+    "backgroundColor": "#fff",
     "usingComponents": {
       "van-button": "./wxcomponents/vant/dist/button/index",
       "van-icon": "./wxcomponents/vant/dist/icon/index",

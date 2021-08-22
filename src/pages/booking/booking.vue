@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: lgt
  * @Date: 2021-07-13 21:24:02
- * @LastEditTime: 2021-07-18 10:49:43
+ * @LastEditTime: 2021-08-04 20:20:42
  * @LastEditors: xxx
 -->
 <template>
@@ -445,6 +445,13 @@ export default {
                         title:'记账成功',
                         duration:2000
                     })
+                    //需要清空数据
+                      that.outlayData={
+                          zhichuMoney: "",
+                          accountClass: "",
+                          bookingTime: "",
+                          zhichubeizhu: "",
+                       }
                     setTimeout(()=>{
                         // 跳转到 tabBar 页面只能使用 switchTab 跳转
                          uni.switchTab({
@@ -512,6 +519,12 @@ export default {
                         title:'记账成功',
                         duration:2000
                     })
+                    that.incomeData= {
+                            zhichuMoney: "",
+                            accountClass: "",
+                            bookingTime: "",
+                            zhichubeizhu: "",
+                     }
                     setTimeout(()=>{
                         // 跳转到 tabBar 页面只能使用 switchTab 跳转
                          uni.switchTab({
