@@ -64,7 +64,7 @@
     "flyio": "^0.6.2",
     "hydrogen-js-sdk": "^2.2.4",
     "moment": "^2.29.1",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "regenerator-runtime": "^0.12.1",
     "sass-loader": "^5.0.0",
     "vue": "^2.6.11",
