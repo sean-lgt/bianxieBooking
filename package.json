@@ -66,7 +66,7 @@
     "moment": "^2.29.1",
     "node-sass": "^6.0.1",
     "regenerator-runtime": "^0.12.1",
-    "sass-loader": "^5.0.0",
+    "sass-loader": "^13.2.0",
     "vue": "^2.6.11",
     "vuex": "^3.2.0"
   },
@@ -83,7 +83,7 @@
     "@dcloudio/webpack-uni-mp-loader": "^2.0.0-31920210609001",
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-31920210609001",
     "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-service": "~5.0.8",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
     "jest": "^25.4.0",
